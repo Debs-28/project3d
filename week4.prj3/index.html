@@ -1,0 +1,124 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+    *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0rem;
+
+}
+.body{
+    background-color: #f5f5f5;
+    font-family:"Poppins";
+}
+    .container{
+        display:flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        font-family: "Poppins";
+        padding: 10px;
+        
+    }
+    .card{
+        background-color: #f5f5f5;
+        width: 260px;
+        margin: 20px;
+       box-shadow: 0 3rem 6rem rgb(0 0 0 / 10%);
+       transition: 0.2ms;
+    }
+    .card-image{
+        display: block;
+        height: 150px;
+        width: 150%;
+        object-fit: contain;
+        margin-bottom: 15px;
+        background-size: cover;
+    }
+    .card-1{
+        background-image: url('./images/image1.jpg');
+    }
+    .card-2
+    {
+        background-image: url('./images/image2.jpg');
+    }
+    .card-3{
+        background-image: url('./images/image3.jpg');
+    }
+    .card h1{
+        padding: 10px;
+        font-family: "Poppins";
+    }
+    .card-text{
+        font-size: 15px;
+        font-family: "Poppins";
+        margin: 15px;
+        text-align:start;
+        padding: 10px;
+        
+    }
+    .card-button{
+    color: #3363ff;
+    width: 200px;
+    padding: 15px 20px 15px 10px;
+    display: block;
+    text-align: center;
+    margin: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    }
+    .card- button:hover{
+     cursor: pointer;
+     transform: translate(-0.5%);
+     box-shadow: 0 3rem 6rem rgb(0 0 0 / 10%);
+    }
+    .card-button span{
+        margin-left: 1rem;
+        transition: 0.2s;
+    }
+    
+    @media only screen and (max-width: 760px){
+        body{
+            padding: 3rem;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link favicon="images"/>
+    <title>Project 3</title>
+</head>
+<body class="body">
+
+    <section class="container">
+        <div class="card">
+            <div class="card-image card-1"></div>
+            <h1>A starry sky</h1>
+            <p class="card-text">Look up at the night sky and find yourself <strong>immersed</strong> in the amazing mountain range of Aspen.</p>
+            <button class="card-button">Explore<span>&rarr;</span></button>
+        </div>
+        <div class="card">
+            <div class="card-image card-2"></div>
+            <h1>Misty mornings</h1>
+            <p class="card-text">Capture the stunning <strong>essence</strong> of the early morning sunrise in the Californian wilderness.</p>
+            <button class="card-button">Explore<span>&rarr;</span></button>
+        </div>
+        <div class="card">
+            <div class="card-image card-3"></div>
+            <h1>Utah sunsets</h1>
+            <p class="card-text">Sunsets over the <strong>stunning</strong> Utah Canyonlands, is truly something much more than incredible.</p>
+            <button class="card-button">Explore<span>&rarr;</span></button>
+        </div>
+    </section>
+    
+</body>
+</html>
